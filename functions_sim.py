@@ -29,7 +29,7 @@ def _clean_param(
             parsed = float(val)
             if np.isfinite(parsed):
                 num = parsed
-        except TypeError, ValueError:
+        except (TypeError, ValueError):
             pass
 
     if num is None:
